@@ -18,7 +18,7 @@ view: review_all {
   }
 
   dimension: rating {
-    type: string
+    type: number
     sql: ${TABLE}.rating ;;
   }
 
@@ -28,7 +28,7 @@ view: review_all {
   }
 
   dimension: reviews {
-    type: string
+    type: number
     sql: ${TABLE}.reviews ;;
   }
 
