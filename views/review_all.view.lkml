@@ -62,7 +62,7 @@ view: review_all {
     drill_fields: []
   }
 
-  measure: rating2 {
+  dimension: rating2 {
     type: number
     sql: ${TABLE}.rating ;;
   }
