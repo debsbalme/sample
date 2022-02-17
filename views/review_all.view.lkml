@@ -8,7 +8,7 @@ view: review_all {
   }
 
   dimension: date {
-    type: string
+    type: date
     sql: ${TABLE}.date ;;
   }
 
@@ -61,4 +61,10 @@ view: review_all {
     type: count
     drill_fields: []
   }
+
+  measure: rating2 {
+    type: number
+    sql: ${TABLE}.rating ;;
+  }
+
 }
