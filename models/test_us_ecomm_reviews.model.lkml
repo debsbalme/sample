@@ -10,4 +10,5 @@ datagroup: test_us_ecomm_reviews_default_datagroup {
 
 persist_with: test_us_ecomm_reviews_default_datagroup
 
-explore: review_all {}
+explore: full_reviews {}
+explore: full_products {}
