@@ -13,7 +13,7 @@ view: full_reviews {
   }
 
   dimension: number_reviews {
-    type: string
+    type: number
     sql: ${TABLE}.NumberReviews ;;
   }
 
