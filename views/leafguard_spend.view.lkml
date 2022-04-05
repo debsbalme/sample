@@ -15,7 +15,7 @@ view: leafguard_spend {
   measure: cost {
     sql: ${TABLE}.cost ;;
     type: sum
-    value_format: "$#.00;($#.00)"
+    value_format: "$#,##0"
   }
 
 
