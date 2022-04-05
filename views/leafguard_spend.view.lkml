@@ -12,7 +12,7 @@ view: leafguard_spend {
     sql: ${TABLE}.Channel ;;
   }
 
-  dimension: cost {
+  measure: cost {
     type: number
     sql: ${TABLE}.cost ;;
   }
@@ -33,7 +33,7 @@ view: leafguard_spend {
     sql: ${TABLE}.date ;;
   }
 
-  dimension: leads {
+  measure: leads {
     type: number
     sql: ${TABLE}.leads ;;
   }
