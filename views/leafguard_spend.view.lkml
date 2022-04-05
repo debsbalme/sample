@@ -18,6 +18,11 @@ view: leafguard_spend {
     value_format: "$#,##0"
   }
 
+  measure: CPL {
+    sql: ${TABLE}.cost /${TABLE}.leads ;;
+    type: sum
+    value_format: "$#,##0"
+  }
 
 
   dimension_group: date {
