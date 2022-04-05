@@ -13,9 +13,11 @@ view: leafguard_spend {
   }
 
   measure: cost {
-    type: number
     sql: ${TABLE}.cost ;;
+    type: sum
   }
+
+
 
   dimension_group: date {
     type: time
@@ -34,8 +36,8 @@ view: leafguard_spend {
   }
 
   measure: leads {
-    type: number
     sql: ${TABLE}.leads ;;
+    type: sum
   }
 
   dimension: source {
