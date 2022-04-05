@@ -15,6 +15,7 @@ view: leafguard_spend {
   measure: cost {
     sql: ${TABLE}.cost ;;
     type: sum
+    value_format: "$#.00;($#.00)"
   }
 
 
@@ -38,6 +39,7 @@ view: leafguard_spend {
   measure: leads {
     sql: ${TABLE}.leads ;;
     type: sum
+    value_format: "#,##0"
   }
 
   dimension: source {
