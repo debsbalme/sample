@@ -12,8 +12,8 @@ view: full_reviews {
     sql: ${TABLE}.IsSyndicated ;;
   }
 
-  dimension: number_reviews {
-    type: number
+  measure: number_reviews {
+    type: average
     sql: ${TABLE}.NumberReviews ;;
   }
 
@@ -53,13 +53,13 @@ view: full_reviews {
     sql: ${TABLE}.ReviewDate ;;
   }
 
-  dimension: review_length {
-    type: number
+  measure: review_length {
+    type: average
     sql: ${TABLE}.ReviewLength ;;
   }
 
-  dimension: review_rating {
-    type: number
+  measure: review_rating {
+    type: average
     sql: ${TABLE}.ReviewRating ;;
   }
 
