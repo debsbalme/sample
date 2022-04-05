@@ -2,8 +2,8 @@ view: full_products {
   sql_table_name: `johnson-and-johnson-339515.complete_data.full_products`
     ;;
 
-  dimension: price {
-    type: number
+  measure: price {
+    type: average
     sql: ${TABLE}.price ;;
   }
 
@@ -17,8 +17,8 @@ view: full_products {
     sql: ${TABLE}.ProductSize ;;
   }
 
-  dimension: rating {
-    type: number
+  measure: rating {
+    type: average
     sql: ${TABLE}.rating ;;
   }
 
