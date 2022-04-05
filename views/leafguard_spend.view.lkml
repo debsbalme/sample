@@ -19,7 +19,7 @@ view: leafguard_spend {
   }
 
   measure: CPL {
-    sql: ${TABLE}.cost /${TABLE}.leads ;;
+    sql: ${TABLE}.cost /NULLIF(${TABLE}.leads,0) ;;
     type: sum
     value_format: "$#,##0"
   }
