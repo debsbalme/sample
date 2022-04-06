@@ -14,7 +14,7 @@ view: full_reviews {
 
   measure: number_reviews {
     type: average
-    sql: ${TABLE}.NumberReviews ;;
+     sql: CAST(${TABLE}.number_reviews as INTEGER);;
   }
 
   dimension: product {
@@ -60,7 +60,7 @@ view: full_reviews {
 
   measure: review_rating {
     type: average
-     sql: CAST(${TABLE}.review_rating as INTEGER);;
+    sql: ${TABLE}.ReviewRating ;;
   }
 
   dimension: review_title {
