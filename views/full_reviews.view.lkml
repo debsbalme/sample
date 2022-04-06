@@ -14,7 +14,7 @@ view: full_reviews {
 
   measure: number_reviews {
     type: average
-     sql: CAST(${TABLE}.number_reviews as INTEGER);;
+     sql: CAST(${TABLE}.NumberReviews as INTEGER);;
   }
 
   dimension: product {
