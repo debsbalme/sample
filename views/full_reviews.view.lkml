@@ -14,6 +14,7 @@ view: full_reviews {
 
   measure: number_reviews {
     type: average
+    value_format: "0"
      sql: CAST(${TABLE}.NumberReviews as INTEGER);;
   }
 
