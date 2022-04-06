@@ -60,8 +60,15 @@ view: full_reviews {
 
   measure: review_rating {
     type: average
+    value_format: "0.00"
     sql: ${TABLE}.ReviewRating ;;
   }
+
+  dimension: ratings_value {
+    type: string
+    sql: ${TABLE}.ReviewRating ;;
+  }
+
 
   dimension: review_title {
     type: string
