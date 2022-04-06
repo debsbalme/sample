@@ -60,7 +60,7 @@ view: full_reviews {
 
   measure: review_rating {
     type: average
-    sql: ${TABLE}.ReviewRating ;;
+     sql: CAST(${TABLE}.review_rating as INTEGER);;
   }
 
   dimension: review_title {
