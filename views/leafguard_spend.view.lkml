@@ -1,5 +1,5 @@
 view: leafguard_spend {
-  sql_table_name: `johnson-and-johnson-339515.complete_data.LeafguardSpend`
+  sql_table_name: `johnson-and-johnson-339515.complete_data.Leafguard_Spend`
     ;;
 
   dimension: campaign_objective_type {
