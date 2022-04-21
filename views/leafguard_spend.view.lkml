@@ -7,7 +7,7 @@ view: leafguard_spend {
     sql: ${TABLE}.objective ;;
   }
 
-  dimension: channel {
+  dimension: Channel {
     type: string
     sql: ${TABLE}.network ;;
   }
