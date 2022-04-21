@@ -4,12 +4,17 @@ view: leafguard_spend {
 
   dimension: campaign_objective_type {
     type: string
-    sql: ${TABLE}.campaign_objective_type ;;
+    sql: ${TABLE}.objective ;;
   }
 
   dimension: channel {
     type: string
-    sql: ${TABLE}.Channel ;;
+    sql: ${TABLE}.network ;;
+  }
+
+  dimension: Account {
+    type: string
+    sql: ${TABLE}.Accountname ;;
   }
 
   measure: cost {
@@ -54,7 +59,7 @@ view: leafguard_spend {
 
   dimension: targeting_type {
     type: string
-    sql: ${TABLE}.Targeting_Type ;;
+    sql: ${TABLE}.campaign_type ;;
   }
 
   dimension: week {
